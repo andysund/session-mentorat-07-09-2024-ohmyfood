@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/****** General ***********/
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  width: 375px;
+}
+
+* a {
+  text-decoration: none;
+  color: black;
+}
+
+* h1 {
+  font-family: " Roboto";
+}
+
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  width: 375px;
+}
+
+/****** header ***********/
+.header {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/****** Search area ***********/
+.search_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  box-shadow: 3px 3px 25px #d2d2d2;
+  width: 100%;
+}
+
+.search {
+  background-color: #EAEAEA;
+  border: none;
+  outline: thin gray;
+  height: 50px;
+  padding: 0px;
+  display: flex;
+  text-align: center;
+  font-weight: bold;
+}
+
+.fa-location-dot {
+  padding-right: 0px;
+  color: #555;
+  font-size: 20px;
+}
+
+.fa-shop {
+  color: #b030da;
+}
+
+.fa-heart:active {
+  color: #b030da;
+  /*<i class="fa-solid fa-heart"></i>*/
+}
+
+.fa-mobile-screen {
+  color: #7E7E7E;
+}
+
+.fa-list {
+  color: #7E7E7E;
+}
+
+/****** Hero Banner***********/
+.presentation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+.presentation .presentation_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.presentation .presentation_title .h1 {
+  font-weight: bold;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.presentation .presentation_title .h3 {
+  display: flex;
+  flex-direction: column;
+  font-weight: lighter;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: 25px;
+  margin-top: 0px;
+}
+
+.large-screen, .presentation_subtitle_large {
+  display: none;
+}
+
+.small-screen, .presentation_subtitle_small {
+  display: block;
+}
+
+.small-screen {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.presentation_subtitle_small {
+  font-weight: 300;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-family: "roboto";
+  font-size: 18px;
+}
+
+.presentation_subtitle_large {
+  font-weight: 300;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-family: "roboto";
+}
+
+.bouton_restaurant {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #e2a9f5, #b030da);
+  height: 35px;
+  color: white;
+  box-shadow: 3px 3px 25px gray;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 218px;
+  font-family: "roboto";
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/****** Section explaining how it works  ***********/
+.selection {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 50px;
+}
+.selection .btn_fonctionnement {
+  outline: none;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 60px;
+  margin-top: 40px;
+  color: black;
+  box-shadow: 3px 3px 15px gray;
+  width: 350px;
+  z-index: 1;
+  position: relative;
+}
+.selection .btn_fonctionnement .bouton_choisir {
+  border: none;
+  outline: none;
+}
+.selection .btn_fonctionnement .bouton_menu {
+  border: none;
+  outline: none;
+}
+.selection .btn_fonctionnement .bouton_surplace {
+  border: none;
+  outline: none;
+}
+.selection .number {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  border-radius: 50px;
+  background-color: #9356DC;
+  position: absolute;
+  margin-right: 343px;
+  align-items: center;
+  justify-content: center;
+}
+.selection .number_icone {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-top: 3px;
+}
+
+/****** Restaurants selections  ***********/
+.restaurants {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: -webkit-fill-available;
+}
+.restaurants .restaurants_title {
+  margin-right: 225px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  width: 340px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-txt {
+  margin-left: 10px;
+}
+
+.favorite {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.card_img {
+  width: 340px;
+  max-height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 2;
+}
+
+.new {
+  background-color: #99E2D0;
+  width: 80px;
+  height: 29px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  padding: 5px;
+  color: #008766;
+  border-radius: 2px;
+  font-family: "Roboto";
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.heart {
+  font-weight: 700;
+}
+
+.card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+.card-subtitle {
+  text-decoration: none;
+}
+
+.card-subtitle {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/****** Footer  ***********/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #353535;
+  width: 375px;
+}
+
+.footer_content > a {
+  text-decoration: none;
+  color: white;
+}
+
+.partner a {
+  color: white;
+}
+
+.footer_content > h3 {
+  color: white;
+  font-family: "shrikhand";
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.footer_content {
+  margin-left: 25px;
+}
+
+.add_restaurant {
+  display: flex;
+  align-items: center;
+}
+
+.add_restaurant > i {
+  margin-right: 10px;
+}
+
+.add_restaurant > p {
+  margin-top: 10px;
+}
+
+.add-establishement {
+  margin: 0px;
+}
+
+.partenaire {
+  margin-top: 10px;
+}
+
+.legal {
+  margin-top: 10px;
+}
+
+.contact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/****** Media queries for large screen  ***********/
+@media (min-width: 1024px) {
+  /****** General ***********/
+  .body {
+    width: 1440px;
+  }
+  .main {
+    width: 1440px;
+  }
+  /****** Hero Banner ***********/
+  .presentation_title h1 {
+    font-size: 40px;
+  }
+  .presentation_title .presentation_subtitle {
+    font-size: 25px;
+  }
+  .small-screen, .presentation_subtitle_small {
+    display: none;
+  }
+  .large-screen, .presentation_subtitle_large {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .large-screen {
+    margin-bottom: 0px;
+  }
+  /****** Section explaining how it works  ***********/
+  .selection {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fonctionnement_title {
+    flex-basis: 100%;
+    margin-left: 193px;
+    font-weight: bold;
+  }
+  .selection .number {
+    margin-right: 326px;
+  }
+  .choice {
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    margin-left: 161px;
+  }
+  .btn_fonctionnement {
+    flex-basis: 30%;
+  }
+  /****** Restaurants selections  ***********/
+  .restaurants {
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #F6F6F6;
+    margin-bottom: 10px;
+  }
+  .restaurants_title {
+    flex-basis: 100%;
+    margin-left: 197px;
+  }
+  .restaurants_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .card {
+    flex-basis: 50%;
+    width: 490px;
+  }
+  .card_img {
+    width: 493px;
+  }
+  /****** Footer ***********/
+  .ohmyfood {
+    margin-bottom: 25px;
+  }
+  .footer {
+    width: 1440px;
+    height: 114px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .footer_content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+  }
+  .partner {
+    display: flex;
+    gap: 10px;
+    color: white;
+    gap: 37px;
+    margin-right: 74px;
+  }
+  .partner a {
+    color: white;
+  }
+}/*# sourceMappingURL=style.css.map */
